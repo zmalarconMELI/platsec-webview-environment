@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
     fun setwebView() {
         webView = findViewById(R.id.webview)
-        webView.loadUrl("https://auth.mercadopago.com.ar/stage/authorization?client_id=1725127649086275&response_type=code&platform_id=mp")
+        webView.loadUrl("https://auth.mercadopago.com.ar/stage/authorization?client_id=7797417756487296&response_type=code&platform_id=mp&scopes=read,account.debit")
         webView.webViewClient = WebViewClient()
         val settings:WebSettings = webView.settings
         settings.javaScriptEnabled = true
